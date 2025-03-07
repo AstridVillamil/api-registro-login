@@ -29,7 +29,7 @@ Este es un servicio web desarrollado con **Node.js** y **Express** que permite r
 
 ### 1️⃣ Clonar el repositorio  
 ```sh
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/AstridVillamil/api-registro-login.git
 cd tu-repositorio
 ```
 

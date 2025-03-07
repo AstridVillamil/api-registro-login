@@ -115,7 +115,7 @@ Para probar los endpoints con **Postman**, sigue estos pasos:
 
 1. **Abrir Postman**.  
 2. **Crear una nueva solicitud HTTP**.  
-3. **Seleccionar el método** (`POST`) y la **URL** (`http://localhost:3000/register` o `http://localhost:3000/login`).  
+3. **Seleccionar el método** (`POST`) y la **URL** (`http://localhost:3000/registro` o `http://localhost:3000/login`).  
 4. **Ir a la pestaña "Body"**, seleccionar `"raw"` y elegir `"JSON"`.  
 5. **Ingresar los datos en formato JSON** y **enviar la solicitud**.  
 6. **Revisar la respuesta JSON** en la sección de respuestas de Postman. 

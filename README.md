@@ -21,6 +21,7 @@ Este es un servicio web desarrollado con **Node.js** y **Express** que permite r
 │── 📄 database.json     # "Base de datos" en formato JSON  
 │── 📄 package.json      # Dependencias del proyecto  
 │── 📄 README.md         # Documentación  
+```
 
 ---
 
@@ -30,11 +31,13 @@ Este es un servicio web desarrollado con **Node.js** y **Express** que permite r
 ```sh
 git clone https://github.com/tu-usuario/tu-repositorio.git
 cd tu-repositorio
+```
 
 ### 2️⃣ Instalar dependencias  
 Ejecuta el siguiente comando para instalar las dependencias necesarias:  
 ```sh
 npm install
+```
 
 ### 3️⃣ Crear el archivo `database.json` en la raíz del proyecto  
 
@@ -44,29 +47,67 @@ Crea un archivo llamado **`database.json`** en la carpeta raíz del proyecto y a
 {
   "users": []
 }
+```
 
 ### 4️⃣ Iniciar el servidor
-
+```sh
 node server.js
+```
 
-5️⃣ El servidor se ejecutará en:
-
+### 5️⃣ El servidor se ejecutará en:
+```arduino
 http://localhost:3000
+```
 
-📌 Endpoints Disponibles
+---
 
-🔹 Registro de Usuario
-Método: POST
-URL: http://localhost:3000/register
-Body (JSON):
+## 📌 Endpoints Disponibles  
+
+### 🔹 Registro de Usuario  
+📍 **Método:** `POST`  
+📍 **URL:** `http://localhost:3000/registro`  
+
+#### 📍 Body (JSON):  
+```json
 {
     "username": "admin",
     "password": "12345"
 }
-Respuesta esperada:
+```
+#### 📍 Respuesta esperada:
+```json
 {
     "message": "Usuario registrado exitosamente"
 }
+```
+
+### 🔹 Inicio de Sesión
+📍 **Método:** `POST`  
+📍 **URL:** `http://localhost:3000/login`  
+
+#### 📍 Body (JSON):  
+```json
+{
+    "username": "admin",
+    "password": "12345"
+}
+```
+
+#### 📍 Respuesta si las credenciales son correctas:
+```json
+{
+    "message": "Autenticación satisfactoria"
+}
+```
+
+#### 📍 Respuesta si las credenciales son incorrectas:
+```json
+{
+    "message": "Error en la autenticación"
+}
+```
+
+---
 
 ## 🚀 Pruebas con Postman  
 

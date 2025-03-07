@@ -30,7 +30,7 @@ Este es un servicio web desarrollado con **Node.js** y **Express** que permite r
 ### 1️⃣ Clonar el repositorio  
 ```sh
 git clone https://github.com/AstridVillamil/api-registro-login.git
-cd tu-repositorio
+cd api-registro-login
 ```
 
 ### 2️⃣ Instalar dependencias  

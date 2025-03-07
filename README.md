@@ -13,13 +13,14 @@ Este es un servicio web desarrollado con **Node.js** y **Express** que permite r
 
 ---
 
-## 📂 Estructura del Proyecto 
+## 📂 Estructura del Proyecto  
 
-📁 servicio-web-auth
-│── 📄 server.js # Código del servidor
-│── 📄 database.json # "Base de datos" en formato JSON
-│── 📄 package.json # Dependencias del proyecto
-│── 📄 README.md # Documentación
+```plaintext
+📁 servicio-web-auth  
+│── 📄 server.js         # Código del servidor  
+│── 📄 database.json     # "Base de datos" en formato JSON  
+│── 📄 package.json      # Dependencias del proyecto  
+│── 📄 README.md         # Documentación  
 
 ---
 
@@ -30,11 +31,21 @@ Este es un servicio web desarrollado con **Node.js** y **Express** que permite r
 git clone https://github.com/tu-usuario/tu-repositorio.git
 cd tu-repositorio
 
-2️⃣ Instalar dependencias
-
+### 2️⃣ Instalar dependencias  
+Ejecuta el siguiente comando para instalar las dependencias necesarias:  
+```sh
 npm install
 
-4️⃣ Iniciar el servidor
+### 3️⃣ Crear el archivo `database.json` en la raíz del proyecto  
+
+Crea un archivo llamado **`database.json`** en la carpeta raíz del proyecto y agrégale el siguiente contenido:  
+
+```json
+{
+  "users": []
+}
+
+### 4️⃣ Iniciar el servidor
 
 node server.js
 
@@ -57,10 +68,13 @@ Respuesta esperada:
     "message": "Usuario registrado exitosamente"
 }
 
-Pruebas con Postman
-1️⃣ Abrir Postman
-2️⃣ Crear una nueva solicitud HTTP
-3️⃣ Seleccionar el método (POST) y la URL (http://localhost:3000/register o http://localhost:3000/login)
-4️⃣ En la pestaña "Body", seleccionar "raw" y elegir "JSON"
-5️⃣ Enviar la solicitud y revisar la respuesta JSON
+## 🚀 Pruebas con Postman  
 
+Para probar los endpoints con **Postman**, sigue estos pasos:  
+
+1. **Abrir Postman**.  
+2. **Crear una nueva solicitud HTTP**.  
+3. **Seleccionar el método** (`POST`) y la **URL** (`http://localhost:3000/register` o `http://localhost:3000/login`).  
+4. **Ir a la pestaña "Body"**, seleccionar `"raw"` y elegir `"JSON"`.  
+5. **Ingresar los datos en formato JSON** y **enviar la solicitud**.  
+6. **Revisar la respuesta JSON** en la sección de respuestas de Postman. 
